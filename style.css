@@ -681,7 +681,7 @@ position: absolute;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .header {
     flex-direction: column;
     height: auto;
