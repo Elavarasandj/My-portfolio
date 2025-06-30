@@ -87,6 +87,17 @@ body{
     padding-left: 30px;
 
 }
+.arrow {
+  color: #0ef;
+  font-weight: bold;
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
 .homecontent span{
     color: #0ef;
     font-size: bold;
@@ -678,67 +689,92 @@ position: absolute;
         opacity: 1;
     }
 }
-
-
-
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .header {
     flex-direction: column;
     height: auto;
-    padding: 10px;
+    padding: 15px 10px;
+    align-items: flex-start;
   }
 
   .logo {
-    font-size: 24px;
-    padding: 8px 20px;
+    font-size: 22px;
+    padding: 8px 16px;
+    margin-bottom: 10px;
   }
 
   .navbar {
-    margin: 10px 0;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    width: 100%;
+    gap: 8px;
   }
 
   .navbar a {
-    font-size: 14px;
-    padding: 5px 10px;
+    font-size: 13px;
+    padding: 5px 8px;
   }
 
   .home {
     flex-direction: column;
-    padding: 120px 5% 0;
+    align-items: center;
+    padding: 140px 5% 30px;
     text-align: center;
   }
 
-  .homecontent {
-    padding-left: 0;
+  .homecontent h3, .homecontent h2 {
+    font-size: 20px;
   }
 
-  .header-pic,
+  .homecontent h2 {
+    font-size: 30px;
+  }
+
+  .homecontent p {
+    font-size: 16px;
+  }
+
   .profile-pic {
-    width: 250px;
-    height: 250px;
-    padding-right: 0;
+    width: 200px;
+    height: 200px;
   }
 
   .about {
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    padding: 20px;
     text-align: center;
   }
 
   .about-img {
     padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-text h2 {
+    font-size: 36px;
+  }
+
+  .about-text h4 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 15px;
   }
 
   .container {
-    padding: 20px;
+    padding: 10px;
   }
 
   .service-list {
     grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .service-list div {
+    padding: 20px;
+    font-size: 16px;
   }
 
   .technicalskill {
@@ -757,13 +793,16 @@ position: absolute;
     align-items: center;
   }
 
-  .radial-bars .radial-bar {
+  .radial-bar {
     width: 80%;
+  }
+  .container2{
+    margin-top: 250px;
   }
 
   .contact-section {
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    padding: 20px;
     margin-top: 50px;
   }
 
@@ -774,17 +813,31 @@ position: absolute;
 
   .portfolio-content {
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .row img {
     height: auto;
   }
 
+  .layer {
+    padding: 10px;
+  }
+  .last-text{
+    margin-top: 550px;
+  }
+
   .last-text p {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 20px 10px;
+  }
+
+  .top i {
+    font-size: 18px;
+    padding: 8px;
   }
 }
+
 
 
 
